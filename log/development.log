@@ -5653,3 +5653,429 @@ Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/threa
 Refile::App: [2021-03-20 15:29:37 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 17.8ms
 
   [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."title" = ? LIMIT ?[0m  [["title", "railsを学ぼう"], ["LIMIT", 11]]
+Started GET "/" for 60.120.56.8 at 2021-03-21 13:54:20 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 60.120.56.8 at 2021-03-21 13:54:26 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 294ms (Views: 292.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 60.120.56.8 at 2021-03-21 13:54:29 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists" for 60.120.56.8 at 2021-03-21 13:54:31 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" for 60.120.56.8 at 2021-03-21 13:54:31 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> `magick convert /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-zkep0v /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-zkep0v.jpeg` failed with error:
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/572.
+convert: no images defined `/tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-zkep0v.jpeg' @ error/convert.c/ConvertImageCommand/3304.
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/image.rb:436:in `format'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:134:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:57:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-03-21 13:54:31 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 85.9ms
+
+Started GET "/todolists/new" for 60.120.56.8 at 2021-03-21 13:54:33 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/attachments/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" for 60.120.56.8 at 2021-03-21 13:54:33 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> `magick convert /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-a5ciij /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-a5ciij.jpeg` failed with error:
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/572.
+convert: no images defined `/tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-a5ciij.jpeg' @ error/convert.c/ConvertImageCommand/3304.
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/image.rb:436:in `format'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:134:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:57:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-03-21 13:54:33 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 30.1ms
+
+Started GET "/todolists" for 60.120.56.8 at 2021-03-21 13:54:37 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (5.2ms)
+Started GET "/attachments/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" for 60.120.56.8 at 2021-03-21 13:54:37 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> `magick convert /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1kewpxx /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1kewpxx.jpeg` failed with error:
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/572.
+convert: no images defined `/tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1kewpxx.jpeg' @ error/convert.c/ConvertImageCommand/3304.
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/image.rb:436:in `format'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:134:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:57:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-03-21 13:54:37 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 26.9ms
+
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/attachments/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" for 60.120.56.8 at 2021-03-21 13:54:37 +0000
+Cannot render console from 60.120.56.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> `magick convert /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1jcwwe0 /tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1jcwwe0.jpeg` failed with error:
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/572.
+convert: no images defined `/tmp/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca28020210321-7068-1jcwwe0.jpeg' @ error/convert.c/ConvertImageCommand/3304.
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/image.rb:436:in `format'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:134:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:57:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.4.5/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.4.5/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-03-21 13:54:37 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 16.4ms
+
