@@ -6200,3 +6200,12 @@ Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/serve
 Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 Refile::App: [2021-03-22 08:42:46 +0000] GET "/425833ca943625c5a84a6a98c881b892ca7b775d/store/fill/200/200/b83674870307553b4766df6dbd53f7509e6ceeb3925312c088b8b1dca280/image.jpeg" 500 89.9ms
 
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mList Create (4.7ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "railsを学ぼう"], ["body", "rails cについて"], ["created_at", "2021-03-22 13:25:46.143980"], ["updated_at", "2021-03-22 13:25:46.143980"]]
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mList Destroy (2.0ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 1]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
