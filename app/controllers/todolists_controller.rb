@@ -9,6 +9,7 @@ class TodolistsController < ApplicationController
     redirect_to todolist_path(list.id)
   end
   def index
+    puts  ENV['SECRET_KEY']
     @lists = List.all
   end
   def show
